@@ -2,7 +2,7 @@ import { useEffect, useMemo, useState } from "react";
 import styled from "styled-components";
 import { useNavigate } from "react-router-dom";
 
-const API_BASE = "https://unshuddering-arcanely-jacquline.ngrok-free.dev";
+const API_BASE = import.meta.env.VITE_API_URL;
 
 function Dashboard() {
   const navigate = useNavigate();
