@@ -2,7 +2,7 @@ import { useMemo, useRef, useState } from "react";
 import styled from "styled-components";
 import { useNavigate } from "react-router-dom";
 import { useEffect } from "react";
-const API_BASE = "https://unshuddering-arcanely-jacquline.ngrok-free.dev";
+const API_BASE = import.meta.env.VITE_API_URL;
 const LIMITE_POR_PRODUTO = 12;
 const CODIGO_MUNICIPIO_SANTA_RITA = 3159605;
 const CNPJ_PRESTADOR = "63747360000171";
